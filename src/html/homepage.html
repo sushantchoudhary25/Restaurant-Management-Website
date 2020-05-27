@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="A Best Indian restaurent">
+      <meta name="keywords" content="online site">
+      <meta name="author" content="Sushant Choudhary">
+      <title>
+         Indian Accent | Welcomes You
+      </title>
+      <link rel="stylesheet" href="../css/homepage.css">
+      <script>
+         function validateForm() {
+             var x = document.forms["myForm"]["email"].value;
+             var atpos = x.indexOf("@");
+             var dotpos = x.lastIndexOf(".");
+             if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                 alert("Not a valid e-mail address");
+                 return false;
+             }
+         }
+      </script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div id="branding">
+               <h1><span class="highlight">INDIAN</span> ACCENT</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li class="current"><a href="#">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="menu.html">Services</a></li>
+                  <li><a href="about.html">About</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section id="showcase">
+         <div class="container">
+            <h1>INDIAN ACCENT</h1>
+            <p>Indian Accent showcases inventive indian cusine by complimenting the flavours and traditions of India with global ingredients and techniques</p>
+         </div>
+      </section>
+      <section id="newsletter">
+         <div class="container">
+            <h1>Subscribe to our Newsletter</h1>
+            <form name="myForm" onsubmit="return validateForm()">
+               <input type="email" placeholder="Enter Email" name="email">
+               <button type="submit" class="button_1">Subscribe</button>
+            </form>
+         </div>
+      </section>
+      <section id="boxes">
+         <div class="container">
+            <div class="box">
+               <img src="../images/homepage/homepage_image1.jpg"/>
+               <h3>Times Food Award</h3>
+               <p>Awarded Restaurant Of The Year 2017</p>
+            </div>
+            <div class="box">
+               <img src="../images/homepage/homepage_image2.jpg"/>
+               <h3>2016 Travellers Choice</h3>
+               <p>Awarded No.1 Restaurant In India For 2016</p>
+            </div>
+            <div class="box">
+               <img src="../images/homepage/homepage_image3.jpg"/>
+               <h3>Asia's 50 Restaurents 2017</h3>
+               <p>Asia’s 50 Best Restaurants 2017 For The Third Consecutive Year</p>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <p>
+            Copyright &copy 2009 www.indianaccentrestaurant.com.<br> All right reserved.
+            By using this site, you agree to the Terms of Rights and Private Policy
+         </p>
+      </footer>
+   </body>
+</html>

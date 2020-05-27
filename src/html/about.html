@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="author" content="Sushant Choudhary">
+      <title>Indian | Services</title>
+      <link rel="stylesheet" href="../css/homepage.css">
+      <script>
+         function validateForm() {
+         var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+         	document.myForm.fname.focus();
+                return false;
+            }
+            var x = document.forms["myForm"]["email"].value;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            }
+         var x = document.forms["myForm"]["feed"].value;
+            if (x == "") {
+                alert("Feedback must be filled out");
+         	document.myForm.feed.focus();
+                return false;
+            }
+         }
+
+      </script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div id="branding">
+               <h1><span class="highlight">Indian</span> Accent</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="homepage.html">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="menu.html">Services</a></li>
+                  <li class="current"><a href="about.html">About</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <section id="main">
+         <div class="container">
+            <article id="main-col">
+               <h1 class="page-title">About</h1>
+               <ul id="services">
+                  <li>
+                     <h3>When Platters Meet Pages</h3>
+                     <p>By Rupamudra Kataki-The New Indian Express After choreographing dishes that have created more than a ripple in the world of culinary excellence, chef Manish Mehrotra turns writer with the Indian Accent Restaurant Cookbook. We, for once, could not help but ask a clichéd question, “What do you find more difficult? Cooking or writing?” Expecting a […]</p>
+                  </li>
+                  <li>
+                     <h3>CHEF MANISH MALHOTRA ON HIS FUSION INDIAN FOOD</h3>
+                     <p>Text by Shirin Mehta for Verve Magazine This is why he is touted as ‘the most exciting modern Indian chef in the world today’     To excite the adventurous and yet satisfy traditional palates…this is what Chef Manish Mehrotra aims to do at New Delhi’s Indian Accent at the Manor Hotel, the only restaurant […]</p>
+                  </li>
+                  <li>
+                     <h3>7 Pioneering Masterchefs</h3>
+                     <p>By Samai Singh, Travel & Leisure MANISH MEHROTRA Indian Accent, Delhi THE RECENT WINNER OF THE TV SHOW FOODISTAN, IN CONVERSATION WITH T+L Your love affair with Indian cuisine began? Ever since I was born…. But I developed a relationship with India cuisine about 16 years ago, when I started cooking. Has Indian cuisine evolved […]</p>
+                  <li>
+                     <h3>Dishing out some national culinary integration</h3>
+                     <p>30th July, The Economic Times Cuisine is obviously an evolving phenomenon; if it wasn’t, we would still have the rudimentary diet of our hunter-gatherer ancestors. That we reached molecular gastronomy – which takes almost ghoulish delight in duping the senses – and clawed our way back to ‘real’ food, shows the culinary world’s state of […]</p>
+                  </li>
+               </ul>
+            </article>
+            <aside id="sidebar">
+               <div class="dark">
+                  <h3>Give us Feedback !</h3>
+                  <form  name="myForm" class="quote" onsubmit="return validateForm();">
+                     <div>
+                        <label>Name</label><br>
+                        <input type="text" placeholder="Name" name="fname">
+                     </div>
+                     <div>
+                        <label>Email</label><br>
+                        <input type="email" placeholder="Email Address" name="email">
+                     </div>
+                     <div>
+                        <label>Feedback</label><br>
+                        <textarea placeholder="Message" maxlength="100" name="feed"></textarea>
+                     </div>
+                     <button type="submit" class="button_1">Send</button>
+                  </form>
+               </div>
+            </aside>
+         </div>
+      </section>
+      <footer>
+         <p>Copyright &copy 2009 www.indianaccentrestaurant.com.<br> All right reserved.
+            By using this site, you agree to the Terms of Rights and Private Policy
+         </p>
+      </footer>
+   </body>
+</html>
